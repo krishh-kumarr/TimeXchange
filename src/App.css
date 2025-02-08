@@ -1,0 +1,77 @@
+/* Global Styles */
+:root {
+  --primary-color: #4F46E5;  /* Blue for buttons */
+  --secondary-color: #60A5FA;  /* Light Blue for hover effects */
+  --background-color: #F3F4F6;  /* Light Gray Background */
+  --card-bg-color: #FFFFFF;  /* White for cards */
+  --input-bg-color: #F9FAFB;  /* Light background for inputs */
+  --border-color: #D1D5DB;  /* Soft border color */
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* Card Styling */
+.card {
+  background: var(--card-bg-color);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  padding: 2rem;
+  max-width: 400px;
+  width: 100%;
+  margin: 50px auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #111827;
+  margin-bottom: 1.5rem;
+}
+
+/* Input/Select Styling */
+input[type="number"], input[type="text"], select {
+  padding: 0.75rem 1rem;
+  border: 2px solid var(--border-color);
+  border-radius: 0.5rem;
+  background-color: var(--input-bg-color);
+  width: 100%;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input[type="number"]:focus, input[type="text"]:focus, select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  background-color: #ffffff;
+}
+
+/* Button Styling */
+button {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.5);
+}
